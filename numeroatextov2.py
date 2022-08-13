@@ -112,6 +112,7 @@ def f(n):
                 return(digito[d0]+' millones')
             else:
                 return(digito[d0]+' millones '+f(d1*100000+d2*10000+d3*1000+d4*100+d5*10+d6))
+                                 #Alternativa: f(int(str(d1)+str(d2)+...+str(d6)))
 
 n=int(input('Digite un entero entre 0 y 9999999: '))
 print(f(n))
